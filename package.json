@@ -1,0 +1,12 @@
+{
+  "name": "@watthem/quarrel",
+  "version": "0.1.0",
+  "description": "Lightweight similarity utilities (TF-IDF + cosine).",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "README.md"
+  ]
+}

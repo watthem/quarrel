@@ -21,7 +21,7 @@
  */
 
 // Use relative path for local development/testing, package name when installed
-const similarity = require("../index.js");
+const similarity = require("../index.cjs");
 
 function plugin(eleventyConfig, options = {}) {
   const {

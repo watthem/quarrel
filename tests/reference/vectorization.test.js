@@ -10,7 +10,7 @@
 import { describe, it, expect } from "vitest";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const quarrel = require("../../index.js");
+const quarrel = require("../../index.cjs");
 
 describe("buildTfidfVectors", () => {
   it("returns vectors where vectors[0].length === vocab.length (reference.md:124-125)", () => {

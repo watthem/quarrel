@@ -10,7 +10,7 @@
 import { describe, it, expect } from "vitest";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const quarrel = require("../../index.js");
+const quarrel = require("../../index.cjs");
 
 describe("TF-IDF weighting behavior (explainer.md:26-38)", () => {
   it("words frequent in one doc but rare everywhere else score highest", () => {

@@ -10,7 +10,7 @@
 import { describe, it, expect } from "vitest";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const quarrel = require("../../index.js");
+const quarrel = require("../../index.cjs");
 
 describe("stripFrontmatter", () => {
   it("removes YAML frontmatter from text (reference.md:20-21)", () => {

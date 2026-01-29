@@ -8,7 +8,7 @@
 import { describe, it, expect } from "vitest";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const quarrel = require("../../index.js");
+const quarrel = require("../../index.cjs");
 
 describe("fingerprintText", () => {
   it('returns "cad44818" for "hello world" (reference.md:101-102)', () => {

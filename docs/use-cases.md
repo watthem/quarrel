@@ -72,6 +72,8 @@ this.registerCommand({
 
 Generate dynamic word clouds from document content. Use TF-IDF scores to size and color terms, giving visual prominence to words that best characterize a document.
 
+<WordCloudDemo />
+
 ```js
 const quarrel = require("quarrel");
 

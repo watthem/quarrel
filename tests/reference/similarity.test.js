@@ -9,7 +9,7 @@
 import { describe, it, expect } from "vitest";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const quarrel = require("../../index.js");
+const quarrel = require("../../index.cjs");
 
 describe("cosineSimilarity", () => {
   it("returns 1 for identical vectors (reference.md:207)", () => {

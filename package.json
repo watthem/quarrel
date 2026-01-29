@@ -2,11 +2,11 @@
   "name": "@watthem/quarrel",
   "version": "0.1.0",
   "description": "Lightweight similarity utilities (TF-IDF + cosine).",
-  "main": "index.js",
+  "main": "index.cjs",
   "type": "commonjs",
   "license": "MIT",
   "files": [
-    "index.js",
+    "index.cjs",
     "README.md",
     "CHANGELOG.md"
   ],

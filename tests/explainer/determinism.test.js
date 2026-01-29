@@ -10,7 +10,7 @@
 import { describe, it, expect } from "vitest";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const quarrel = require("../../index.js");
+const quarrel = require("../../index.cjs");
 
 describe("determinism (explainer.md:86)", () => {
   it("same inputs produce identical vectors across multiple runs", () => {

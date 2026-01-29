@@ -18,7 +18,7 @@ Removes YAML frontmatter (`---` blocks) from the start of a string.
 
 ```js
 quarrel.stripFrontmatter("---\ntitle: Hello\n---\nBody");
-// => "Body"
+// => "\nBody"
 
 quarrel.stripFrontmatter("No frontmatter");
 // => "No frontmatter"
@@ -38,7 +38,7 @@ Strips all markdown syntax — frontmatter, code blocks, inline code, images, li
 
 ```js
 quarrel.normalizeMarkdown("# Title\n\nSome **bold** and [a link](http://x.com).");
-// => "Title Some bold and a link ."
+// => "Title Some bold and ."
 ```
 
 ---
@@ -99,7 +99,7 @@ Returns an 8-character hex hash for change detection. Same input always gives th
 
 ```js
 quarrel.fingerprintText("hello world");
-// => "d58b3fa7"
+// => "cad44818"
 ```
 
 Not for security — just for checking if content changed between runs.

@@ -20,7 +20,8 @@ module.exports = {
         items: [
           { text: "How-To Guide", link: "/guide" },
           { text: "API Reference", link: "/reference" },
-          { text: "How Quarrel Works", link: "/explainer" }
+          { text: "How Quarrel Works", link: "/explainer" },
+          { text: "Use Cases", link: "/use-cases" }
         ]
       },
       {

@@ -1,0 +1,10 @@
+{
+  "id": "quarrel-similar-notes",
+  "name": "Quarrel Similar Notes",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Local-only similar notes panel using TF-IDF + cosine similarity.",
+  "author": "Watthem",
+  "authorUrl": "https://github.com/watthem",
+  "isDesktopOnly": false
+}

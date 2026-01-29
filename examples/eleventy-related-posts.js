@@ -1,23 +1,26 @@
 /**
  * 11ty Related Posts Plugin
- * 
+ *
  * Generates a "related posts" feature for your Eleventy blog
  * by computing TF-IDF similarity between post content.
- * 
+ *
  * Usage in .eleventy.js:
- * 
+ *
  *   const relatedPosts = require("./eleventy-related-posts");
  *   eleventyConfig.addPlugin(relatedPosts.plugin, {
  *     maxRelated: 3,
  *     minSimilarity: 0.1,
  *     useHashing: true
  *   });
- * 
+ *
  * Then in your template:
- * 
+ *
  *   {% for post in related %}
  *     <a href="{{ post.url }}">{{ post.title }}</a>
  *   {% endfor %}
+ *
+ * NOTE: This example rebuilds vectors per filter call. For large sites,
+ * consider caching the vectorization result at build start.
  */
 
 // Use relative path for local development/testing, package name when installed

@@ -1,0 +1,48 @@
+.quarrel-similar-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.quarrel-similar-notes .status {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.quarrel-similar-notes .warning {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: var(--background-modifier-error);
+  color: var(--text-on-accent);
+  font-size: 12px;
+}
+
+.quarrel-similar-notes .note-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  cursor: pointer;
+}
+
+.quarrel-similar-notes .note-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.quarrel-similar-notes .note-title {
+  font-size: 13px;
+  color: var(--text-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quarrel-similar-notes .note-score {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}

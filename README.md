@@ -25,6 +25,7 @@ const matches = similarity.calculateSimilarities(items, { maxSimilar: 5 });
 
 ## API
 
+- `stripFrontmatter(text)`
 - `normalizeMarkdown(text)`
 - `tokenize(text, options)`
 - `buildEmbeddingText({ title, content }, options)`

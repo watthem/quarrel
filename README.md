@@ -1,7 +1,7 @@
 # @watthem/quarrel
 
 A tiny, dependency-free similarity toolkit built around TF-IDF + cosine similarity.
-Designed to run in both Node and browser/Obsidian environments.
+Designed to run in Node, browsers, and desktop apps (Electron, Tauri, VSCode extensions).
 
 ## Usage
 

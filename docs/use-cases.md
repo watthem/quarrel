@@ -35,34 +35,33 @@ Then in your template:
 
 ---
 
-## Note-Taking Apps
+## Desktop Apps (Electron, Tauri, VSCode)
 
-### Obsidian
-
-Find semantically similar notes in your vault. Build a similarity index once, then query it for any note to get ranked matches.
+Build "similar documents" features into desktop JavaScript apps. Quarrel runs entirely client-side with no external calls—ideal for local-first, privacy-respecting tools.
 
 ```js
-const SimilarNotesIndex = require("./obsidian-similar-notes");
+const { SimilarNotesIndex } = require("@watthem/quarrel/examples/obsidian-similar-notes");
 
-// In your plugin's onload()
-const similarNotes = new SimilarNotesIndex(this.app, {
+// Works with any app that has a document store
+const index = new SimilarNotesIndex(documentStore, {
   maxResults: 5,
-  minSimilarity: 0.15
+  minSimilarity: 0.1
 });
 
-this.registerCommand({
-  id: "find-similar",
-  name: "Find similar notes",
-  callback: () => {
-    const results = similarNotes.getSimilarNotes(
-      this.app.workspace.getActiveFile()
-    );
-    // results: [{ path, title, similarity, percentage }, ...]
-  }
-});
+// Build index from your documents
+await index.buildIndex();
+
+// Query for similar documents
+const results = index.findSimilar(currentDocument);
+// results: [{ path, title, score }, ...]
 ```
 
-[View example code](https://github.com/watthem/quarrel/blob/main/examples/obsidian-similar-notes.js)
+This pattern works for:
+- **Obsidian plugins** — surface related notes in your vault
+- **VSCode extensions** — find similar files in a workspace
+- **Electron/Tauri apps** — add "related items" to any document-based tool
+
+[View Obsidian example](https://github.com/watthem/quarrel/blob/main/examples/obsidian-similar-notes.js)
 
 ---
 

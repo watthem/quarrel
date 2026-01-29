@@ -2,7 +2,7 @@
 
 A tiny JavaScript library that answers one question: **which of my documents are about the same thing?**
 
-No dependencies. No server. Works in Node, the browser, and Obsidian.
+No dependencies. No server. Works in Node, browsers, and desktop apps (Electron, Tauri, VSCode extensions).
 
 ## Install
 

@@ -1,6 +1,7 @@
 module.exports = {
   title: "Quarrel",
   description: "Lightweight TF-IDF similarity utilities.",
+  base: "/quarrel/",
   themeConfig: {
     nav: [
       { text: "Guide", link: "/guide" },

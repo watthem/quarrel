@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  "entry": [
+    "index.cjs",
+    "index.mjs",
+    "vitest.config.js",
+    "scripts/*.mjs",
+    "examples/**/*.js",
+    "examples/obsidian-plugin/main.ts"
+  ],
+  "ignorePatterns": ["node_modules/**", "dist/**", "docs/.vitepress/**", "artifacts/**", ".forage/**"]
+}

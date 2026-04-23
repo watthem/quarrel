@@ -1,0 +1,20 @@
+{
+  "entry": [
+    "index.cjs",
+    "index.mjs",
+    "vitest.config.js",
+    "docs/.vitepress/config.js",
+    "scripts/*.mjs",
+    "examples/**/*.js",
+    "examples/obsidian-plugin/main.ts"
+  ],
+  "project": [
+    "*.js",
+    "*.cjs",
+    "*.mjs",
+    "docs/**/*.js",
+    "examples/**/*.{js,ts,mjs}",
+    "scripts/**/*.mjs"
+  ],
+  "ignore": ["node_modules/**", "dist/**", "docs/.vitepress/**", "artifacts/**", ".forage/**"]
+}

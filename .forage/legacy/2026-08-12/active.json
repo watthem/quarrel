@@ -1,0 +1,21 @@
+{
+  "items": [],
+  "resolved": [
+    {
+      "id": "quarrel.DEV-2026-02-001",
+      "type": "DEV",
+      "pipeline": "dev",
+      "title": "Initialize forage pipeline",
+      "stage": "draft",
+      "priority": "P2",
+      "updated": "2026-02-09T00:00:00Z",
+      "next_step": "Review quarrel repo state and identify next actions",
+      "resolution": "Archived: co-founder keep/kill review 2026-02-27 — supporting lane cleanup, forage pipeline inits",
+      "resolved_at": "2026-02-27T19:48:11Z"
+    }
+  ],
+  "counters": {
+    "DEV": 1
+  },
+  "current_month": "2026-02"
+}

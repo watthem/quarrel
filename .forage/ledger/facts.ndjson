@@ -1,0 +1,1 @@
+{"id":"fact_1786509030_83ff64","fact_type":"claim","ticket_id":"quarrel.DEV-2026-02-001","authority":"agent_provisional","timestamp":"2026-08-12T04:30:30Z","payload":{"claim":"Ticket migrated from pre-v0.1 forage schema, stage at migration time: draft.","scope":"tickets/quarrel.DEV-2026-02-001.md","tags":["migrated-from-legacy-schema"]}}
